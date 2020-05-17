@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  width: calc(100vw - 17px);
+}
+@media (max-width: 767px) {
+  body {
+    width: calc(100vw);
+  }
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

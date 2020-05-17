@@ -1,0 +1,10 @@
+server/node_modules
+server/package-lock.json
+server/.idea
+masterskaya/node_modules
+masterskaya/build
+masterskaya/package-lock.json
+masterskaya/.idea
+.idea
+server/config_full.js
+server/config/db_full.js

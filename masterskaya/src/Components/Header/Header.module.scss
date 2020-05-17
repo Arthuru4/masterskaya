@@ -1,0 +1,24 @@
+.Header {
+  height: 140px;
+
+  //max-width: 100vw;
+}
+.Head {
+  height: 140px;
+
+  width: 100%;
+  color: #eee4d0;
+  background-color: #ffffff;
+
+}
+
+@media (max-width: 766px) {
+  .Header {
+    height: 0;
+  }
+}
+@media (min-width: 767px) {
+ .Header {
+   height: 0;
+ }
+}

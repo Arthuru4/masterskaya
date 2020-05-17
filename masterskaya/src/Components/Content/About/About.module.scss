@@ -1,0 +1,35 @@
+@media (max-width: 766px) {
+  .About {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #aaaaaa;
+    img {
+      width: 100%;
+    }
+    .text {
+      width: 100%;
+    }
+    .block {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+}
+@media (min-width: 767px) {
+  .About {
+    min-height: calc(100vh - 100px);
+    background-color: #aaaaaa;
+
+    .text {
+      width: 70vw;
+    }
+    .block {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.Item {
+  max-width: 100vw;
+  min-height: 100vh;
+  padding: 20px 10px;
+  background-color: #aaaaaa;
+
+  .code {
+    width: 100%;
+    text-align: right;
+    span {
+      color: #5b3916;
+    }
+  }
+.backLink {
+  text-decoration: none;
+  color: #61dafb;
+  font-size: 20px;
+
+  &:visited {
+    color: #61dafb;
+  }
+}
+}
+
+// mobile
+@media (max-width: 766px) {
+}
+
+// desktop
+@media (min-width: 767px) {
+  .block_body {
+  }
+}

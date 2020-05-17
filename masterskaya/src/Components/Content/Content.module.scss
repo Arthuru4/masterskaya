@@ -1,0 +1,12 @@
+.Content {
+  background-color: #aaaaaa;
+  min-height: 100vh;
+  max-width: 100vw;
+}
+
+@media (max-width: 767px) {
+  .Content {
+    padding-top: 65px;
+    background-color: #aaaaaa;
+  }
+}

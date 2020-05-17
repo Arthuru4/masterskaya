@@ -1,0 +1,32 @@
+.Footer {
+  bottom: 0;
+  left: 0;
+  width: calc(100% - 20px);
+  height: 100px;
+  background-color: #292929;
+  color: #b3b3b3;
+  padding: 10px;
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  a {
+    color: #61dafb;
+    text-decoration: none;
+    img {
+      width: 40px;
+    }
+    &:visited {
+      color: #61dafb;
+    }
+  }
+
+  .rightSide {
+    text-align: right;
+  }
+}
+
+@media (max-width: 766px) {
+}
+@media (min-width: 767px) {
+}

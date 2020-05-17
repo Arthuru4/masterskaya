@@ -1,0 +1,56 @@
+.Home {
+  //max-height: 100vh;
+}
+.HomeCarousel {
+  //max-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.popular {
+  background-color: #aaaaaa;
+  color: #ffffff;
+  text-align: center;
+  .popularTitle {
+    line-height: 80px;
+    font-size: 35px;
+  }
+  .popularBody {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    .block {
+
+      width: 250px;
+      height: 250px;
+      margin: 20px;
+      -webkit-box-shadow: 0 15px 45px 3px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0 15px 45px 3px rgba(0, 0, 0, 0.75);
+      box-shadow: 0 15px 45px 3px rgba(0, 0, 0, 0.75);
+      border-radius: 10px;
+      .blockTitle {
+        position: absolute;
+        line-height: 250px;
+        width: 250px;
+        height: 250px;
+        font-weight: 400;
+        font-size: 30px;
+      }
+      .blockBody {
+        position: absolute;
+        width: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          width: auto;
+          height: 80%;
+        }
+        height: 250px;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
