@@ -8,14 +8,14 @@ import Item from "../Components/Content/Item/Item";
 import Order from "../Components/Order/Order";
 
 const ContentRouter = {
-    "/": () => <Home />,
-    "/contact": () => <Contact />,
-    // @ts-ignore
-    "/item:id": ({id}) => <Item id={id} />,
-    "/categories": () => <Categories />,
-    "/generator": () => <Generator />,
-    "/about": () => <About />,
-    "/order": () => <Order />
+  "/": () => <Home />,
+  "/contact": () => <Contact />,
+  // @ts-ignore
+  "/item:id": ({ id }) => <Item id={id} />,
+  "/categories": () => <Categories />,
+  "/generator": () => <Generator />,
+  "/about": () => <About />,
+  "/order": () => <Order />,
 };
 
 export default ContentRouter;

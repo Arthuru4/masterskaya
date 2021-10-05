@@ -10,7 +10,8 @@ import newPostStore, {
   NewPostStore
 } from "../../scripts/mobx/newPostStore";
 import { makeOrder } from "../../modules/axiosService";
-import { A } from "hookrouter";
+// import { A } from "hookrouter";
+const A = require('hookrouter').A
 
 interface IProps {
   cartStore?: CartStore;

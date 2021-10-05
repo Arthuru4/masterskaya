@@ -1,4 +1,4 @@
 export enum CatTypes {
-    BAG = "Сумки",
-    PILLOWCASE = "Наволочки",
+  BAG = "Сумки",
+  PILLOWCASE = "Наволочки",
 }

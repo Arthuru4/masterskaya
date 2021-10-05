@@ -1,12 +1,12 @@
 import React, { useContext, useEffect, useState } from "react";
 import s from "./Cart.module.scss";
-import CartIcon from "./CartIcon";
 import { observer } from "mobx-react-lite";
 import { inject } from "mobx-react";
 import { CartStore, cartStoreContext } from "../../scripts/mobx/cartStore";
 import CartPositions from "./CartPositions";
+// @ts-ignore
 import {A} from "hookrouter";
-
+import { Close } from '@material-ui/icons';
 interface IProps {
   cartStore?: CartStore;
 }
@@ -41,7 +41,7 @@ const CartModal = inject("cartStore")(
                 <div>
                   <div className={s.header}>
                     Корзина
-                    <div className={s.closeBtn} onClick={onClickHandler}></div>
+                    <div className={s.closeBtn} onClick={onClickHandler}><Close/></div>
                   </div>
                   <div className={s.content}>
                     {!cartStore.positions.length && "Здесь пусто"}
@@ -58,7 +58,7 @@ const CartModal = inject("cartStore")(
                       <div className={s.sum}>
                         Итого: <span>{props.cartStore._sum} грн</span>{" "}
                       </div>
-                      <A href={'/order'}  onClick={onClickHandler}> <div className={s.makeDeal}> Оформить заказ</div></A>
+                      <A href={'/order'} onClick={onClickHandler} className={s.makeDealLink}> <div className={s.makeDeal}> Оформить заказ</div></A>
                     </div>
                   )}
                 </div>

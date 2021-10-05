@@ -1,10 +1,9 @@
 .Categories {
-  min-height: calc(100vh - 100px);
+  //min-height: calc(100vh - 100px);
   background-color: #aaaaaa;
   min-width: 320px;
-padding-top: 15px;
+  padding-top: 15px;
   .title {
-
     font-size: 24px;
     font-weight: 600;
     min-width: 190px;
@@ -59,9 +58,7 @@ padding-top: 15px;
         align-items: center;
       }
       img {
-        //width: auto;
         max-height: 90%;
-        //background-color: #aaaaaa;
       }
       &_legend {
         padding: 10px;
@@ -99,9 +96,8 @@ padding-top: 15px;
 
 @media (max-width: 767px) {
   .Categories {
-    min-height: 100vh;
+    //min-height: 100vh;
     padding-top: 0px;
-
   }
 }
 @media (max-width: 477px) {

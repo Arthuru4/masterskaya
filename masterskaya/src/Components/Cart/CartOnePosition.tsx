@@ -3,6 +3,7 @@ import s from "./Cart.module.scss";
 import { CartStore } from "../../scripts/mobx/cartStore";
 import { inject } from "mobx-react";
 import { observer } from "mobx-react-lite";
+import { Close } from '@material-ui/icons';
 
 interface IProps {
   id: string;
@@ -35,7 +36,9 @@ const CartOnePosition = inject("cartStore")(
         <div
           className={s.delCartPosition}
           onClick={() => props.onClickDelButton(props.id)}
-        />
+        >
+        <Close></Close>
+        </div>
         <div className={s.imgWrapper}>
           <img src={props.cartStore.positions[position].iProduct.preview} alt="" />
         </div>

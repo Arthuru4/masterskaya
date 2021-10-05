@@ -1,20 +1,20 @@
 import Axios from "axios";
 import { IProduct, IProductObject } from "../scripts/mobx/productsStore";
 import { CatTypes } from "../models/enums/CatTypes";
-import {IUserData} from "../scripts/mobx/newPostStore";
-import {IExtra} from "../scripts/mobx/cartStore";
+import { IUserData } from "../scripts/mobx/newPostStore";
+import { IExtra } from "../scripts/mobx/cartStore";
 
 const BAGS: IProduct[] = [
   {
-    "preview":
+    preview:
       "https://lh3.googleusercontent.com/d/1qrReLFz5vNBhDg_FDIy7dFJDDNzVfu0E",
-    "id": "1001",
-    "type": CatTypes.BAG,
-    "img": [],
-    "textile_art": null,
-    "img_art": "",
+    id: "1001",
+    type: CatTypes.BAG,
+    img: [],
+    textile_art: null,
+    img_art: "",
     price: 800,
-    "description": `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`
+    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`,
   },
   {
     preview:
@@ -25,7 +25,7 @@ const BAGS: IProduct[] = [
     textile_art: null,
     img_art: "",
     price: 800,
-    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`
+    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`,
   },
   {
     preview:
@@ -36,7 +36,7 @@ const BAGS: IProduct[] = [
     textile_art: null,
     img_art: "",
     price: 800,
-    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`
+    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`,
   },
   {
     preview:
@@ -47,7 +47,7 @@ const BAGS: IProduct[] = [
     textile_art: null,
     img_art: "",
     price: 800,
-    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`
+    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`,
   },
   {
     preview:
@@ -58,7 +58,7 @@ const BAGS: IProduct[] = [
     textile_art: null,
     img_art: "",
     price: 800,
-    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`
+    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`,
   },
   {
     preview:
@@ -69,7 +69,7 @@ const BAGS: IProduct[] = [
     textile_art: null,
     img_art: "",
     price: 800,
-    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`
+    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`,
   },
   {
     preview:
@@ -80,7 +80,7 @@ const BAGS: IProduct[] = [
     textile_art: null,
     img_art: "",
     price: 800,
-    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`
+    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`,
   },
   {
     preview:
@@ -91,7 +91,7 @@ const BAGS: IProduct[] = [
     textile_art: null,
     img_art: "",
     price: 800,
-    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`
+    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`,
   },
   {
     preview:
@@ -102,7 +102,7 @@ const BAGS: IProduct[] = [
     textile_art: null,
     img_art: "",
     price: 800,
-    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`
+    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`,
   },
   {
     preview:
@@ -113,7 +113,7 @@ const BAGS: IProduct[] = [
     textile_art: null,
     img_art: "",
     price: 800,
-    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`
+    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`,
   },
   {
     preview:
@@ -124,7 +124,7 @@ const BAGS: IProduct[] = [
     textile_art: null,
     img_art: "",
     price: 800,
-    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`
+    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`,
   },
   {
     preview:
@@ -135,7 +135,7 @@ const BAGS: IProduct[] = [
     textile_art: null,
     img_art: "",
     price: 800,
-    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`
+    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`,
   },
   {
     preview:
@@ -146,7 +146,7 @@ const BAGS: IProduct[] = [
     textile_art: null,
     img_art: "",
     price: 800,
-    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`
+    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`,
   },
   {
     preview:
@@ -157,7 +157,7 @@ const BAGS: IProduct[] = [
     textile_art: null,
     img_art: "",
     price: 800,
-    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`
+    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`,
   },
   {
     preview:
@@ -168,7 +168,7 @@ const BAGS: IProduct[] = [
     textile_art: null,
     img_art: "",
     price: 800,
-    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`
+    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`,
   },
   {
     preview:
@@ -179,8 +179,8 @@ const BAGS: IProduct[] = [
     textile_art: null,
     img_art: "",
     price: 800,
-    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`
-  }
+    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`,
+  },
 ];
 const PILLOWCASE: IProduct[] = [
   {
@@ -192,7 +192,7 @@ const PILLOWCASE: IProduct[] = [
     textile_art: null,
     img_art: "",
     price: 100,
-    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`
+    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`,
   },
   {
     preview:
@@ -203,7 +203,7 @@ const PILLOWCASE: IProduct[] = [
     textile_art: null,
     img_art: "",
     price: 800,
-    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`
+    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`,
   },
   {
     preview:
@@ -214,7 +214,7 @@ const PILLOWCASE: IProduct[] = [
     textile_art: null,
     img_art: "",
     price: 800,
-    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`
+    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`,
   },
   {
     preview:
@@ -225,7 +225,7 @@ const PILLOWCASE: IProduct[] = [
     textile_art: null,
     img_art: "",
     price: 800,
-    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`
+    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`,
   },
   {
     preview:
@@ -236,7 +236,7 @@ const PILLOWCASE: IProduct[] = [
     textile_art: null,
     img_art: "",
     price: 800,
-    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`
+    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`,
   },
   {
     preview:
@@ -247,7 +247,7 @@ const PILLOWCASE: IProduct[] = [
     textile_art: null,
     img_art: "",
     price: 800,
-    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`
+    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`,
   },
   {
     preview:
@@ -258,7 +258,7 @@ const PILLOWCASE: IProduct[] = [
     textile_art: null,
     img_art: "",
     price: 800,
-    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`
+    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`,
   },
   {
     preview:
@@ -269,7 +269,7 @@ const PILLOWCASE: IProduct[] = [
     textile_art: null,
     img_art: "",
     price: 800,
-    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`
+    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`,
   },
   {
     preview:
@@ -280,7 +280,7 @@ const PILLOWCASE: IProduct[] = [
     textile_art: null,
     img_art: "",
     price: 800,
-    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`
+    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`,
   },
   {
     preview:
@@ -291,7 +291,7 @@ const PILLOWCASE: IProduct[] = [
     textile_art: null,
     img_art: "",
     price: 800,
-    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`
+    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`,
   },
   {
     preview:
@@ -302,7 +302,7 @@ const PILLOWCASE: IProduct[] = [
     textile_art: null,
     img_art: "",
     price: 800,
-    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`
+    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`,
   },
   {
     preview:
@@ -313,7 +313,7 @@ const PILLOWCASE: IProduct[] = [
     textile_art: null,
     img_art: "",
     price: 800,
-    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`
+    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`,
   },
   {
     preview:
@@ -324,7 +324,7 @@ const PILLOWCASE: IProduct[] = [
     textile_art: null,
     img_art: "",
     price: 800,
-    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`
+    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`,
   },
   {
     preview:
@@ -335,7 +335,7 @@ const PILLOWCASE: IProduct[] = [
     textile_art: null,
     img_art: "",
     price: 800,
-    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`
+    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`,
   },
   {
     preview:
@@ -346,7 +346,7 @@ const PILLOWCASE: IProduct[] = [
     textile_art: null,
     img_art: "",
     price: 800,
-    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`
+    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`,
   },
   {
     preview:
@@ -357,8 +357,8 @@ const PILLOWCASE: IProduct[] = [
     textile_art: null,
     img_art: "",
     price: 800,
-    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`
-  }
+    description: `Сумка с {такой} ткани {такого цвета}. Размер ...мм/...мм`,
+  },
 ];
 
 const arrData: IProductObject = {
@@ -376,26 +376,28 @@ export const submitRequest = (data: ISubmitData) => {
   return Axios({
     method: "POST",
     url: "http://localhost:3002/send",
-    data
+    data,
   });
 };
 
 interface IData {
-  userInfo: IUserData,
-  positions: IExtra[]
+  userInfo: IUserData;
+  positions: IExtra[];
 }
 export const makeOrder = (data: IData) => {
-  const positions = data.positions.map(el => {return{id: el.id, count: el._count, sum: el._sum}});
+  const positions = data.positions.map((el) => {
+    return { id: el.id, count: el._count, sum: el._sum };
+  });
 
   return Axios({
     method: "POST",
     url: "http://localhost:3002/order",
-    data: {...data, positions}
+    data: { ...data, positions },
   });
 };
 
 export const getAllProducts = () => {
-  return new Promise(resolve => {
+  return new Promise((resolve) => {
     resolve({ data: arrData });
   });
 };
@@ -404,6 +406,6 @@ export const setAllProducts = (data?: IProduct[]) => {
   return Axios({
     method: "POST",
     url: "http://localhost:3002/setproducts",
-    data: data || BAGS
+    data: data || BAGS,
   });
 };

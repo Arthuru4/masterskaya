@@ -7,7 +7,8 @@ import lips from "../../../assets/lips.png";
 import { inject } from "mobx-react";
 import { observer } from "mobx-react-lite";
 import { ProductsStore } from "../../../scripts/mobx/productsStore";
-import { A } from "hookrouter";
+// import { A } from "hookrouter";
+const A = require('hookrouter').A
 
 export interface ICarouselBlock {
   title?: string;

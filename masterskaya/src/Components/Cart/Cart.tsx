@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import s from "./Cart.module.scss";
-import CartIcon from "./CartIcon";
+import {ReactComponent as CartIcon} from "../../assets/cart.svg"
+
 import { inject } from "mobx-react";
 import { observer } from "mobx-react-lite";
 import { CartStore, cartStoreContext } from "../../scripts/mobx/cartStore";
@@ -35,7 +36,7 @@ const Cart = inject("cartStore")(
             {!!cartStore.positions.length && (
               <div className={s.counter}>{cartStore.positions.length}</div>
             )}
-            {/*<CartIcon />*/}
+            <CartIcon />
           </div>
         </div>
       </div>

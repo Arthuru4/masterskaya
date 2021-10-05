@@ -13,16 +13,21 @@ import CartModal from "./Components/Cart/CartModal";
 function App() {
   return (
     <Provider {...StoreMobx}>
-      <div className="App">
-        <ChangeMobileDesktop />
-        <NavMenu />
-        {/*<Header />*/}
-        <Content />
+      <>
+        <div className="App">
+          <div className={'app_wrap'}>
+            <NavMenu />
+            {/*<Header />*/}
+            <Content />
 
-        <CartModal />
-        <CartIcon />
-        <Footer />
-      </div>
+            <Footer />
+          </div>
+
+          <CartModal />
+          <CartIcon />
+          <ChangeMobileDesktop />
+        </div>
+      </>
     </Provider>
   );
 }

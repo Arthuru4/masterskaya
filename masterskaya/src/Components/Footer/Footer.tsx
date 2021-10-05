@@ -1,6 +1,5 @@
 import React from "react";
 import s from "./Footer.module.scss";
-import { A } from "hookrouter";
 import viber from "../../assets/viberbw.png";
 import telegram from "../../assets/telegram-logo.png";
 // {
@@ -8,6 +7,8 @@ import telegram from "../../assets/telegram-logo.png";
 //         link: "viber://chat?number=%2B380662803729",
 //     text: "+38 066 280 37 29"
 // }
+const A = require('hookrouter').A
+
 const Footer = () => {
   return (
     <div className={s.Footer}>

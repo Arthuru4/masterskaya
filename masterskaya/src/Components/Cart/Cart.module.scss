@@ -2,22 +2,30 @@
   position: fixed;
   right: 20px;
 
-  background-color: green;
+  border: 2px solid green;
   border-radius: 50%;
-  opacity: 0.4;
+  //opacity: 0.4;
   cursor: pointer;
   z-index: 1000;
 
   .button {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 60px;
     height: 60px;
     text-align: center;
     color: #ffffff;
+
+    svg {
+      width: 60%;
+    }
   }
   .counter {
     position: absolute;
     right: 0;
+    top: 0;
     width: 20px;
     height: 20px;
     line-height: 20px;
@@ -41,24 +49,32 @@
   z-index: 1002;
 }
 .CartModal {
-  overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   position: absolute;
-  min-height: 90vh;
+  min-height: 50vh;
 
   background-color: #ffffff;
   border-radius: 10px;
-  max-height: 100vh;
+  //max-height: 100vh;
 
   .header {
-    margin: 20px;
+    //margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     font-size: 30px;
+    padding: 20px;
+    height: 45px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.4);
   }
 
   .content {
     border: #000000 1px;
+    overflow-y: auto;
+
     //height: 700vh;
-    padding: 0 10px;
+    padding: 0 20px;
 
     .cartPosition {
       margin-bottom: 5px;
@@ -102,11 +118,14 @@
         position: absolute;
         border-radius: 5px;
 
+        display: flex;
+        justify-content: center;
+        align-items: center;
         left: 10px;
         top: 10px;
         width: 30px;
         height: 30px;
-        background-color: #61dafb;
+        //background-color: #61dafb;
       }
     }
   }
@@ -121,6 +140,9 @@
       font-size: 20px;
       margin: 10px 0;
       font-weight: 600;
+    }
+    .makeDealLink {
+      text-decoration: unset;
     }
     .makeDeal {
       box-shadow: -8px -8px 8px 0 rgba(255, 255, 255, 0.3),
@@ -142,12 +164,21 @@
     }
   }
   .closeBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     float: right;
     width: 45px;
     height: 45px;
     border-radius: 10px;
-    background-color: green;
+    //background-color: rgba(0,0,0,0.4);
     cursor: pointer;
+    &:hover {
+      opacity: 0.8;
+    }
+    &:active {
+      opacity: 1;
+    }
   }
 
   transition: height 1s, width 1s, transform 1s;

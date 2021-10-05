@@ -3,7 +3,6 @@ import s from "./Item.module.scss";
 import { IProduct, ProductsStore } from "../../../scripts/mobx/productsStore";
 import { inject } from "mobx-react";
 import { observer } from "mobx-react-lite";
-import { A } from "hookrouter";
 import Tab from "../Tab/Tab";
 import { CartStore, cartStoreContext } from "../../../scripts/mobx/cartStore";
 interface IProps {
@@ -11,6 +10,7 @@ interface IProps {
   productsStore: ProductsStore;
   cartStore?: CartStore;
 }
+const A = require("hookrouter").A;
 
 const Item = inject(
   "productsStore",

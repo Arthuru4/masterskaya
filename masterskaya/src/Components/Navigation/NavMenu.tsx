@@ -2,10 +2,11 @@ import s from "./NavMenu.module.scss";
 import React, { useContext, useState } from "react";
 import Hamburger from "./../Hamburger/Hamburger";
 import contentBg from "../../assets/content.jpg";
-import { A } from "hookrouter";
+// import { A } from "hookrouter";
 import { deviceStoreContext } from "../../scripts/mobx/deviceStore";
 import { DeviceType } from "../../models/enums/DeviceType";
 import { observer } from "mobx-react-lite";
+const A = require('hookrouter').A
 
 const NavMenu = observer((props: any) => {
   const [isOpen, setIsOpen] = useState(false);

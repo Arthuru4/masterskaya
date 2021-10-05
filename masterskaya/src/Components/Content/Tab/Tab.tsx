@@ -1,7 +1,6 @@
 import React, { useContext, useState } from "react";
 import s from "./Tab.module.scss";
 import { IProduct } from "../../../scripts/mobx/productsStore";
-import Carousel from "../../CarouselContainer/CarouselContainer";
 import { observer } from "mobx-react-lite";
 import { deviceStoreContext } from "../../../scripts/mobx/deviceStore";
 import { DeviceType } from "../../../models/enums/DeviceType";

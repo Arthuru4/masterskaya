@@ -1,7 +1,8 @@
 import React from "react";
 import s from "./Content.module.scss";
 import ContentRouter from "../../scripts/Router";
-import { useRoutes } from "hookrouter";
+// import { useRoutes } from "hookrouter";
+const useRoutes = require('hookrouter').useRoutes
 
 const Content = () => {
   // @ts-ignore

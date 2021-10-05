@@ -1,4 +1,4 @@
-import React, {useContext, useEffect, useState} from "react";
+import React, { useContext, useEffect, useState } from "react";
 import s from "./Tab.module.scss";
 import { IProduct } from "../../../scripts/mobx/productsStore";
 import Carousel from "../../CarouselContainer/CarouselContainer";
@@ -8,8 +8,8 @@ import { DeviceType } from "../../../models/enums/DeviceType";
 
 interface IProps {
   currentItem: IProduct;
-  buyButtonHandler: (prod: IProduct) => void
-  inCart: boolean
+  buyButtonHandler: (prod: IProduct) => void;
+  inCart: boolean;
 }
 
 const MainTab = observer((props: IProps) => {
@@ -20,7 +20,7 @@ const MainTab = observer((props: IProps) => {
   const imageBlock = (prev: string, img?: string[]) => {
     let srcArr = [prev];
     if (img && img.length > 0) {
-      srcArr.push(...img)
+      srcArr.push(...img);
     }
     return (
       <div className={s.Image}>
@@ -29,14 +29,14 @@ const MainTab = observer((props: IProps) => {
             carouselArr={[{ src: prev }]}
             options={{
               removeArrowOnDeviceType: ["mobile", "desktop"],
-              autoPlay: false
+              autoPlay: false,
             }}
           />
         )}
         {!isMobile && (
           <div className={s.desktopContent}>
             <div className={s.leftSlider}>
-              {srcArr.map(el => {
+              {srcArr.map((el) => {
                 return (
                   <div key={el} className={s.imgItem}>
                     <img src={el} alt="" />
@@ -44,51 +44,61 @@ const MainTab = observer((props: IProps) => {
                 );
               })}
             </div>
-            <img src={prev} alt="" />
+            <img className={s.picked} src={prev} alt="" />
           </div>
         )}
       </div>
     );
   };
   useEffect(() => {
-      // console.error(props.inCart)
-  }, [props.inCart])
+    // console.error(props.inCart)
+  }, [props.inCart]);
 
   const getContext = () => {
     return (
-          <div className={s.block_body_tab_main}>
-            {imageBlock(props.currentItem.preview, props.currentItem.img)}
-            <div className={s.priceBlock}>
-              <div className={s.price}>{props.currentItem.price
-                ? props.currentItem.price + "₴"
-                : "Нет в наличии"}
-              </div>
-              <div onClick={() => props.buyButtonHandler(props.currentItem)} className={s.buyButton}>{props.currentItem.price ? !props.inCart ?  'Купить' : "Уже в корзине" : 'Заказать'}</div>
-            </div>
-            <div className={s.legendBlock}>
-              {/*<div>артикул изделия: {props.currentItem.id}</div>*/}
-              {/*<span>Код:</span> {props.currentItem.img_art}*/}
-<div className={s.description}>
-              <div>
-                ткань: шафран{" "}
-                <span className={s.textile_art}>
-                  арт. {props.currentItem.textile_art}
-                </span>
-              </div>
-            </div>
+      <div className={s.block_body_tab_main}>
+        {imageBlock(props.currentItem.preview, props.currentItem.img)}
+        <div className={s.priceBlock}>
+          <div className={s.price}>
+            {props.currentItem.price
+              ? props.currentItem.price + "₴"
+              : "Нет в наличии"}
+          </div>
+          <div
+            onClick={() => props.buyButtonHandler(props.currentItem)}
+            className={s.buyButton}
+          >
+            {props.currentItem.price
+              ? !props.inCart
+                ? "Купить"
+                : "Уже в корзине"
+              : "Заказать"}
+          </div>
+        </div>
+        <div className={s.legendBlock}>
+            <div className={'divider'}></div>
+
+            {/*<div>артикул изделия: {props.currentItem.id}</div>*/}
+          {/*<span>Код:</span> {props.currentItem.img_art}*/}
+          <div className={s.description}>
             <div>
-              <br />
-              Описание: <br />
-              {props.currentItem.description}
+              ткань: шафран{" "}
+              <span className={s.textile_art}>
+                арт. {props.currentItem.textile_art}
+              </span>
             </div>
-            </div>
-          </div>)
-  }
+          </div>
+          <div>
+            <br />
+            Описание: <br />
+            {props.currentItem.description}
+          </div>
+        </div>
+      </div>
+    );
+  };
 
-
-  return (
-      getContext()
-  );
+  return getContext();
 });
 
 export default MainTab;

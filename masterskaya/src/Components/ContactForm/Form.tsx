@@ -51,7 +51,7 @@ const Form = () => {
         <div className={s.socIcon}>
           <img
             src={data.img}
-            alt="instagram icon"
+            alt="social icon"
             draggable={false}
             onClick={() => {
               goToLink(data.link);
@@ -76,9 +76,10 @@ const Form = () => {
       <div className={s.formHeader}>
         <div className={s.formHeader_title}>Свяжитесь с нами</div>
       </div>
-      {getSocialBlock()}
       {!showPopup && (
         <div className={s.formWrapper}>
+          {getSocialBlock()}
+
           <FormContent
             onSubmitMethod={submitRequest}
             formPopupSwitch={formPopupSwitch}

@@ -4,6 +4,7 @@ import s from "./CarouselContainer.module.scss";
 import Carousell from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { ICarouselBlock } from "../Content/Home/Home";
+// @ts-ignore
 import { A } from "hookrouter";
 
 interface Interface {

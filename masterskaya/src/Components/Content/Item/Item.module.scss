@@ -1,6 +1,6 @@
 .Item {
   max-width: 100vw;
-  min-height: 100vh;
+  //min-height: 100vh;
   padding: 20px 10px;
   background-color: #aaaaaa;
 
@@ -11,15 +11,15 @@
       color: #5b3916;
     }
   }
-.backLink {
-  text-decoration: none;
-  color: #61dafb;
-  font-size: 20px;
-
-  &:visited {
+  .backLink {
+    text-decoration: none;
     color: #61dafb;
+    font-size: 20px;
+
+    &:visited {
+      color: #61dafb;
+    }
   }
-}
 }
 
 // mobile
